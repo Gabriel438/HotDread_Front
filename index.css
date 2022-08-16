@@ -1,0 +1,36 @@
+.main{
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 200px;
+}
+
+.text-status{
+    text-align: center;
+}
+
+.img-icon{
+    height: 50px;
+    width: 50px;
+}
+.text-status{
+    font-weight: bold;
+}
+button{
+    cursor: pointer;
+    padding: 3px 10px;
+    border: none;
+    margin: 5px 0px;
+    border-radius: 5px;
+    width: 100%;
+}
+.btn-danger{
+    color:#fff;
+    background-color: rgb(165, 26, 16);
+}
+.btn-success{
+    color:#fff;
+    background-color: rgb(46, 165, 16);
+}

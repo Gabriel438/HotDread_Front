@@ -1,0 +1,23 @@
+{
+    "name": "Command demo - basic",
+    "version": "1.0",
+    "manifest_version": 3,
+    "background": {
+      "service_worker": "background.js"
+    },
+    "commands": {
+      "inject-script": {
+        "suggested_key": "Ctrl+A",
+        "description": "Inject a script on the page"
+      }
+    },
+    "permissions": [
+        "tabs"
+    ],
+    "content_scripts": [
+      {
+        "matches": ["https://mail.google.com/*"],
+        "js": ["js/main.js"]
+      }
+    ]
+  }
